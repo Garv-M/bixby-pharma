@@ -1,0 +1,8 @@
+structure (userCommands) {
+  description (__DESCRIPTION__)
+  property (Command) {
+    type (viv.core.Text)
+    min (Optional)
+    max (Many)
+  }
+}

@@ -1,0 +1,11 @@
+structure (Symptoms) {
+  description (__DESCRIPTION__)
+  property (diagnosis) {
+    type (viv.core.Text)
+    min (Optional) max (Many)
+  }
+  property (accuracy) {
+    type (viv.core.Integer)
+    min (Optional) max (Many)
+  }
+}

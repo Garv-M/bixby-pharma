@@ -1,0 +1,11 @@
+action (GetCommands) {
+  description (Returns all commands concering the capsule.)
+  type(Search)
+  collect {
+    input (request) {
+      type (Request)
+      min (Required) max (One)
+    }
+  }
+  output (userCommands)
+}

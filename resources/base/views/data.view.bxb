@@ -1,0 +1,151 @@
+result-view {
+  match: DrugData (this)
+  render {
+    layout {
+      section {
+        content {
+          if (!exists(this.params) && exists(this.warnings) && exists(this.purpose) && exists(this.activeingredient)&& exists(this.dosage)) {
+            single-line {
+              text {
+                color (Green)
+                style (Detail_L)
+                value (Active Ingredients)
+              }
+              spacer {
+                size (Large)
+              }
+            }
+            paragraph {
+              style (Detail_M)
+              value ("#{value(this.activeingredient)}")
+            }
+            single-line {
+              text {
+                color (Green)
+                style (Detail_L)
+                value (Purpose)
+              }
+              spacer {
+                size (Large)
+              }
+            }
+            paragraph {
+              style (Detail_M)
+              value ("#{value(this.purpose)}")
+            }
+            single-line {
+              text {
+                color (Green)
+                style (Detail_L)
+                value (Dosage)
+              }
+              spacer {
+                size (Large)
+              }
+            }
+            paragraph {
+              style (Detail_M)
+              value ("#{value(this.dosage)}")
+            }
+            single-line {
+              text {
+                color (Green)
+                style (Detail_L)
+                value (Warnings)
+              }
+              spacer {
+                size (Large)
+              }
+            }
+            paragraph {
+              style (Detail_M)
+              value ("#{value(this.warnings)}")
+            }
+          }
+          else {
+            if (exists(this.activeingredient)) {
+              single-line {
+                text {
+                  color (Green)
+                  style (Detail_L)
+                  value (Active Ingredients)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.activeingredient)}")
+              }
+            }
+            else-if (exists(this.purpose)) {
+              single-line {
+                text {
+                  color (Green)
+                  style (Detail_L)
+                  value (Purpose)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.purpose)}")
+              }
+            }
+            else-if (exists(this.dosage)) {
+              single-line {
+                text {
+                  color (Green)
+                  style (Detail_L)
+                  value (Dosage)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.dosage)}")
+              }
+            }
+            else-if (exists(this.warnings)) {
+              single-line {
+                text {
+                  color (Green)
+                  style (Detail_L)
+                  value (Warnings)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.warnings)}")
+              }
+            }
+            else-if (exists(this.generated)) {
+              single-line {
+                text {
+                  color (Red)
+                  style (Detail_L)
+                  value (Fetched Information)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.generated)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

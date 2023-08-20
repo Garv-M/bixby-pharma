@@ -1,0 +1,17 @@
+action (GetData) {
+  type (Search)
+  description (__DESCRIPTION__)
+  collect {
+    input (drugName) {
+      type (DrugName)
+      min (Required)
+      max (One)
+    }
+    input (drugParameter) {
+      type (DrugParameter)
+      min (Optional)
+      max (One)
+    }
+  }
+  output (DrugData)
+}

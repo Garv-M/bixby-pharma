@@ -1,0 +1,39 @@
+structure (DrugData) {
+  description (JSON Destructuring)
+  property (activeingredient) {
+    type (viv.core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+  property (purpose) {
+    type (viv.core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+  property (warnings) {
+    type (viv.core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+  property (dosage) {
+    type (viv.core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+  property (params) {
+    type (viv.core.Boolean)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+  property (generated) {
+    type (viv.core.Text)
+    min (Optional)
+    max (One)
+    visibility (Private)
+  }
+}

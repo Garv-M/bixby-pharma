@@ -1,0 +1,19 @@
+action (GetSymptoms) {
+  type(Search)
+  description (Diagnose disease for a set of symptoms.)
+  collect {
+    input (symptom) {
+      type (Symptom)
+      min (Optional) max (Many)
+    }
+    input (gender) {
+      type (Gender)
+      min (Optional) max (One)
+    }
+    input (yob) {
+      type (YearOfBirth)
+      min (Optional) max (One)
+    }
+  }
+  output (Symptoms)
+}

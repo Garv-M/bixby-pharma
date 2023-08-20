@@ -1,0 +1,7 @@
+hints {
+  uncategorized {
+    hint (With Pharma Apps Capsule, perform drug check)
+    hint (With Pharma Apps Capsule, perform drug availability)
+    hint (With Pharma Apps Capsule, perform drug info)
+  }
+}

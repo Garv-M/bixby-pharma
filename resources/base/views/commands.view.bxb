@@ -1,0 +1,44 @@
+result-view {
+  match: userCommands (this)
+  render {
+    layout {
+      section {
+        content {
+          title-card {
+                 title-area {
+                   slot1 {
+                     paragraph {
+                       style(Title_L)
+                       value(Vacation Inn)
+                     }
+                   }
+                   slot2 {
+                     single-line {
+                       text {
+                         color(Green)
+                         style(Detail_L)
+                         value(Open)
+                       }
+                       spacer {
+                         size(Large)
+                       }
+                       text {
+                         style(Detail_L_Soft)
+                         value(Wifi • Spa • Swimming Pool)
+                       }
+                     }
+                   }
+                 }
+                //  on-click {
+                //    intent {
+                //      goal {
+                //       //  SampleGoal
+                //      }
+                //    }
+                //  }
+               }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+train (t-a0d7gkexa6l9wrgxhhnomwxo6) {
+  utterance ("[g:GetData] give (purpose)[v:DrugParameter] of (paracetamol)[v:DrugName]")
+  last-modified (1679212062279)
+}

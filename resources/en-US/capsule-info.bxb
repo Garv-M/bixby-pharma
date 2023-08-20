@@ -1,0 +1,13 @@
+capsule-info {
+  display-name (Pharma Apps)
+  developer-name (NA)
+  description ("Provides data on various medical related details")
+  dispatch-name (Pharma Apps Capsule)
+  search-keywords {
+    keyword (Pharma)
+    keyword (Medical)
+    keyword (Health)
+  }
+  // Set your own image for your capsule's icon
+  icon-asset (images/icons/bixby_launcher.png)
+}
