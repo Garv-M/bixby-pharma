@@ -2,15 +2,32 @@ action (GetData) {
   type (Search)
   description (__DESCRIPTION__)
   collect {
+    input (typeOfDetail){
+      type(Detail)
+      min (Required)
+      max(One)
+    }
     input (drugName) {
       type (DrugName)
-      min (Required)
+      min (Optional)
       max (One)
     }
     input (drugParameter) {
       type (DrugParameter)
       min (Optional)
       max (One)
+    }
+    input (symptom) {
+      type (Symptom)
+      min (Optional) max (Many)
+    }
+    input (gender) {
+      type (Gender)
+      min (Optional) max (One)
+    }
+    input (yob) {
+      type (YearOfBirth)
+      min (Optional) max (One)
     }
   }
   output (DrugData)

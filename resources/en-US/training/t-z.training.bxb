@@ -1,0 +1,4 @@
+train (t-zjq8dvjo1mutzqql15q7r7nq2) {
+  utterance ("[g:GetData] get (diagnosis)[v:Detail] of (agitation)[v:Symptom] (1998)[v:YearOfBirth] (male)[v:Gender]")
+  last-modified (1692593231982)
+}

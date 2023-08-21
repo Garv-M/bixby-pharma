@@ -1,0 +1,4 @@
+train (t-ezkgqgo7ifjiw3skjtj3bogcm) {
+  utterance ("[g:GetData] get (details)[v:Detail] on (active ingredient)[v:DrugParameter] of (paracetamol)[v:DrugName]")
+  last-modified (1692593440008)
+}

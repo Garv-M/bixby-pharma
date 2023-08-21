@@ -143,6 +143,40 @@ result-view {
                 value ("#{value(this.generated)}")
               }
             }
+
+            else-if (exists(this.diagnosis) && exists(this.accuracy)) {
+              single-line {
+                text {
+                  color (Red)
+                  style (Detail_L)
+                  value (Diagnosis)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.diagnosis)}")
+              }
+              spacer {
+                size(Large)
+              }
+              single-line {
+                text {
+                  color (Red)
+                  style (Detail_L)
+                  value (Accuracy)
+                }
+                spacer {
+                  size (Large)
+                }
+              }
+              paragraph {
+                style (Detail_M)
+                value ("#{value(this.accuracy)}")
+              }
+            }
           }
         }
       }
